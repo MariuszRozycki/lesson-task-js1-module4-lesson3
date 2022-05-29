@@ -2,7 +2,6 @@ const select = document.querySelector("select");
 const list = document.querySelector(".list");
 
 
-
 select.addEventListener("change", function(event) {
   console.log(event.target.value);
 
@@ -11,7 +10,7 @@ select.addEventListener("change", function(event) {
   list.innerHTML = "";
 
   for (let i = 1; i <= quantity; i++) {
-    list.innerHTML += `<a class="item">${i}</a>`
+    list.innerHTML += `<a class="item" href="details.html?id=${i}">${i}</a>`
   }
 });
 
